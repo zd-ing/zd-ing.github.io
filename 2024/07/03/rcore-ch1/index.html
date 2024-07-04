@@ -5,12 +5,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="rcore 基础, 进阶之路">
-    <meta name="description" content="编译知识1、在一种计算平台上编译另外一种计算平台上运行的程序，叫做交叉编译。
-2、现代编译流程（C&amp;#x2F;Rust编译器为例）：
-
+    <meta name="description" content="编译知识交叉编译：在一种计算平台上编译另外一种计算平台上运行的程序，叫做交叉编译。
+现代编译流程（C&amp;#x2F;Rust编译器为例）
 源代码——&amp;gt;预处理器——&amp;gt;宏展开的源码
 宏展开的源码——&amp;gt;编译器——&amp;gt;汇编程序
-">
+汇">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -141,17 +140,6 @@
     
   </li>
   
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>友情链接</span>
-    </a>
-    
-  </li>
-  
   <li>
     <a href="#searchModal" class="modal-trigger waves-effect waves-light">
       <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
@@ -243,17 +231,6 @@
 			    <i class="fa-fw fas fa-comments"></i>
 			
 			留言板
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			友情链接
 		</a>
           
         </li>
@@ -396,7 +373,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    249
+                    250
                 </div>
                 
 
@@ -418,16 +395,14 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="编译知识"><a href="#编译知识" class="headerlink" title="编译知识"></a>编译知识</h2><p>1、在一种计算平台上编译另外一种计算平台上运行的程序，叫做交叉编译。</p>
-<p>2、现代编译流程（C&#x2F;Rust编译器为例）：</p>
-<ul>
+                <h2 id="编译知识"><a href="#编译知识" class="headerlink" title="编译知识"></a>编译知识</h2><h5 id="交叉编译："><a href="#交叉编译：" class="headerlink" title="交叉编译："></a>交叉编译：</h5><p>在一种计算平台上编译另外一种计算平台上运行的程序，叫做交叉编译。</p>
+<h5 id="现代编译流程（C-Rust编译器为例）"><a href="#现代编译流程（C-Rust编译器为例）" class="headerlink" title="现代编译流程（C&#x2F;Rust编译器为例）"></a>现代编译流程（C&#x2F;Rust编译器为例）</h5><ul>
 <li>源代码——&gt;预处理器——&gt;宏展开的源码</li>
 <li>宏展开的源码——&gt;编译器——&gt;汇编程序</li>
 <li>汇编程序——&gt;汇编器——&gt;目标代码</li>
 <li>目标代码——&gt;连接器——&gt;可执行文件</li>
 </ul>
-<p>3、rust编译目标三元组（包括cpu-操作系统-运行时）：</p>
-<ul>
+<h5 id="rust编译目标三元组（包括cpu-操作系统-运行时）"><a href="#rust编译目标三元组（包括cpu-操作系统-运行时）" class="headerlink" title="rust编译目标三元组（包括cpu-操作系统-运行时）"></a>rust编译目标三元组（包括cpu-操作系统-运行时）</h5><ul>
 <li><p><strong>X86 :</strong> x86_64-unknown-linux-gnu</p>
 </li>
 <li><p><strong>RISC-V :</strong> riscv64gc-unknown-none-gnu   riscv64gc-unknown-none-elf</p>
