@@ -45,5 +45,16 @@ tags: rcore os
 
 2. 在配置文件中指定
 
+   ```shell
+   mkdir .cargo
+   cd .cargo 
+   vim config.toml
+   # os/.cargo/config
+   [build]
+   target = "riscv64gc-unknown-none-elf"
+   ```
+
+   
+
 
 

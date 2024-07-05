@@ -45,15 +45,24 @@ relative_link: false
 future: true
 syntax_highlighter: highlight.js
 highlight:
-  line_number: true
+  enable: false
+  line_number: false
   auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: false
 prismjs:
+  enable: true
   preprocess: true
-  line_number: true
+  line_number: false
   tab_replace: ''
+
+# 添加prism_plugin配置项
+prism_plugin:
+  mode: 'preprocess'    # realtime/preprocess
+  theme: 'tomorrow'
+  line_number: true    # default false
+  custom_css: 
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
