@@ -4,7 +4,7 @@
 
 # Site
 title: 进阶之路
-subtitle: ''
+subtitle: '进阶之路'
 description: ''
 keywords:
 author: 淘气猫
@@ -44,6 +44,7 @@ post_asset_folder: false
 relative_link: false
 future: true
 syntax_highlighter: highlight.js
+
 highlight:
   enable: false
   line_number: false
@@ -51,18 +52,14 @@ highlight:
   tab_replace: ''
   wrap: true
   hljs: false
-prismjs:
-  enable: true
-  preprocess: true
-  line_number: false
-  tab_replace: ''
 
-# 添加prism_plugin配置项
-prism_plugin:
-  mode: 'preprocess'    # realtime/preprocess
-  theme: 'tomorrow'
-  line_number: true    # default false
-  custom_css: 
+
+prismjs:
+    enable: true
+    preprocess: true
+    line_number: false
+    tab_replace: ''
+
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -105,7 +102,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hexo-theme-matery
+theme: Simple
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

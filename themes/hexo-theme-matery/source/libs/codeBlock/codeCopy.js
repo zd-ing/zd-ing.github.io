@@ -44,7 +44,7 @@ $(function () {
         }
     }
     // 复制
-    $('.code-area .fa-files-o').on('click', function () {
+    $('.code-area .fa-copy').on('click', function () {
         var selection = window.getSelection()
         var range = document.createRange()
         range.selectNodeContents($(this).siblings('pre').find('code')[0])

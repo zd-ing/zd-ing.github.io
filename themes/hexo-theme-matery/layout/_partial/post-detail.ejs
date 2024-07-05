@@ -73,27 +73,9 @@
 
         <% if (config.prismjs && config.prismjs.enable) { %>
         <!-- 是否加载使用自带的 prismjs. -->
-	        <link rel="stylesheet" href="<%- theme.jsDelivr.url %><%- url_for(theme.libs.css.prism) %>">
+        <link rel="stylesheet" href="<%- theme.jsDelivr.url %><%- url_for(theme.libs.css.prism) %>">
         <% } %>
-        
-        <!-- 代码块功能依赖 -->
-        <script type="text/javascript" src="<%- url_for('/libs/codeBlock/codeBlockFunction.js') %>"></script>
 
-        <!-- 代码语言 -->
-	<% if (theme.code.lang) { %>
-		<script type="text/javascript" src="<%- url_for('/libs/codeBlock/codeLang.js') %>"></script>
-	<% } %>
-
-	<!-- 代码块复制 -->
-	<% if (theme.code.copy) { %>
-		<script type="text/javascript" src="<%- url_for('/libs/codeBlock/codeCopy.js') %>"></script>
-	<% } %>
-
-	<!-- 代码块收缩 -->
-	<% if (theme.code.shrink) { %>
-		<script type="text/javascript" src="<%- url_for('/libs/codeBlock/codeShrink.js') %>"></script>
-	<% } %>
-        
         <% if (theme.code.break) { %>
         <!-- 代码块折行 -->
         <style type="text/css">
@@ -237,10 +219,7 @@
 
         // we need a <pre> tag workaround.
         // otherwise the text inside "pre" loses all the line breaks!
-
-        //
-        //if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE' || selection.getRangeAt(0).commonAncestorContainer.nodeName === 'CODE') {
-        if(selection.getRangeAt(0).commonAncestorContainer.nodeName === 'CODE'){
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE' || selection.getRangeAt(0).commonAncestorContainer.nodeName === 'CODE') {
             newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
         }
 
